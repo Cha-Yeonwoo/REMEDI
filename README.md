@@ -3,7 +3,13 @@ EE474 term project
 
 video and speech
 
+Result 1 - Steve Jobs
 [![Watch the video](https://img.youtube.com/vi/QHUvBSEBgrQ/0.jpg)](https://www.youtube.com/watch?v=QHUvBSEBgrQ)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QHUvBSEBgrQ?si=ldnjW9cLAikewB5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Result 2 - Donald Trump
+[![Watch the video](https://img.youtube.com/vi/1nvCJsm_orE/0.jpg)](https://www.youtube.com/watch?v=1nvCJsm_orE)
+
+
+Result 3 - Elon Musk
+[![Watch the video](https://img.youtube.com/vi/nrqS4_CPcsI/0.jpg)](https://youtu.be/nrqS4_CPcsI)
