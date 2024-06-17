@@ -8,17 +8,25 @@ import pickle
 from PIL import Image
 import torch.nn as nn
 import cv2
+import argparse
 
 from fine_toon_project import run_projection
 
-input_image_path = "/mnt/disk1/ivymm02/trump3.png"
+parser = argparse.ArgumentParser(description="Toonify")
+parser.add_argument("--img", type=str, required=True, help="Input image")
+parser.add_argument("--mode", type=str, default='Webtoon', help="image transfer mode")
+args = parser.parse_args()
+input_image_path = args.img #"/mnt/disk1/ivymm02/trump3.png"
 network = "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/transfer-learning-source-nets/ffhq-res256-mirror-paper256-noaug.pkl"
 outdir = "./outputs"
 
 projected_w = run_projection(network, input_image_path, outdir, False, 303, 1000)
 
 device = torch.device('cuda')
-ours_network = './models/ours_Webtoon.pkl'
+if args.mode=='Webtoon':
+    ours_network = './models/ours_Webtoon.pkl'
+else:
+    ours_network = './models/ours_Webtoon.pkl'
 with open(ours_network,'rb') as f:
     G = pickle.load(f).requires_grad_(False).to(device)
     

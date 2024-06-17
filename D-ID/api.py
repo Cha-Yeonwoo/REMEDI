@@ -1,8 +1,16 @@
 import requests
+import time
+import argparse
+
+parser = argparse.ArgumentParser(description="D-ID API call")
+parser.add_argument("--img", type=str, required=True, help="Input image")
+parser.add_argument("--voice", type=str, required=True, help="Input speech")
+args = parser.parse_args()
 
 url = "https://api.d-id.com/audios"
 
-files = { "audio": ("sampleaudio.wav", open("/mnt/disk1/ivymm02/D-ID/myvoice.wav", "rb"), "audio/wav") }
+# files = { "audio": ("sampleaudio.wav", open("/mnt/disk1/ivymm02/D-ID/myvoice.wav", "rb"), "audio/wav") }
+files = { "audio": ("sampleaudio.wav", open(args.voice, "rb"), "audio/wav") }
 headers = {
     "accept": "application/json",
     "authorization": "Basic Yy5raXR0eTAzMDcwOEBnbWFpbC5jb20:cmsPOyJpDuQkfIU8aksoR"
@@ -16,7 +24,8 @@ voice_url = voice_response.json().get('url')
 
 url = "https://api.d-id.com/images"
 
-files = { "image": ("sampleimg.png", open("/mnt/disk1/ivymm02/jobs_toon.png", "rb"), "image/png") }
+# files = { "image": ("sampleimg.png", open("/mnt/disk1/ivymm02/jobs_toon.png", "rb"), "image/png") }
+files = { "image": ("sampleimg.png", open(args.img, "rb"), "image/png") }
 headers = {
     "accept": "application/json",
     "authorization": "Basic Yy5raXR0eTAzMDcwOEBnbWFpbC5jb20:cmsPOyJpDuQkfIU8aksoR"
@@ -61,15 +70,17 @@ print(video_id)
 with open('id.txt', 'w') as f:
     f.write(video_id)
 
-# url = "https://api.d-id.com/talks/"+video_id
-# print(url)
-# final_headers = {
-#     "accept": "application/json",
-#     "authorization": "Basic Yy5raXR0eTAzMDcwOEBnbWFpbC5jb20:cmsPOyJpDuQkfIU8aksoR"
-# }
+time.sleep(5)
 
-# final_response = requests.get(str(url), headers=final_headers)
+url = "https://api.d-id.com/talks/"+video_id
+print(url)
+final_headers = {
+    "accept": "application/json",
+    "authorization": "Basic Yy5raXR0eTAzMDcwOEBnbWFpbC5jb20:cmsPOyJpDuQkfIU8aksoR"
+}
 
-# print(final_response.text)
+final_response = requests.get(str(url), headers=final_headers)
+
+print(final_response.text)
 
 
