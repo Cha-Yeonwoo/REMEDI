@@ -3,8 +3,7 @@ EE474 term project
 
 This project proposes REMEDI, a cascade video generation model that integrates ChatGPT-4, TorToiSe-v2, StyleGAN, and D-ID studio to create personalized self-introduction videos for the metaverse. This repo contains all the code needed to run TorToiSe-v2, StyleGAN, ChatGPT-4 API, and D-ID studio API.
 
-There are generated videos by REMEDI.
-Click the image to watch the video!
+There are 3 generated videos by REMEDI. Click the images to watch the videos!
 
 ## Result 1 - Steve Jobs
 
