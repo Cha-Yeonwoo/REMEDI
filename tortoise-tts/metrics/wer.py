@@ -1,8 +1,9 @@
-# please read this page carefully. https://pypi.org/project/jiwer/
-# please follow the instructions on this page to make independent conda environment only for calculating WER
+# Please read this page carefully. https://pypi.org/project/jiwer/
+# Please follow the instructions on this page to make independent conda environment only for calculating WER
 
 import jiwer
 
+# Input the reference text prompt and recognized text prompt
 reference  = input("reference text prompt: ")
 recognized = input("recognized text prompt: ")
 

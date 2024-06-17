@@ -1,5 +1,5 @@
-# please read this page carefully. https://github.com/MattShannon/mcd
-# please follow the instructions on this page to make independent conda environment only for calculating MCD
+# Please read this page carefully. https://github.com/MattShannon/mcd
+# Please follow the instructions on this page to make independent conda environment only for calculating MCD
 
 from pymcd.mcd import Calculate_MCD
 

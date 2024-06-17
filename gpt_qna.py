@@ -93,7 +93,7 @@ if __name__ == "__main__":
     question = question_template.format(tone)
 
     answers = client.get_answers(question)
-    file_path = "gpt_answer.txt"
+    file_path = "./result/gpt_answer.txt"
     for answer in answers:
         print(answer)
         with open(file_path, "w", encoding="utf-8") as file:
