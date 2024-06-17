@@ -1,7 +1,7 @@
 # REMEDI: Representing-ME
 EE474 term project
 
-This project proposes REMEDI, a cascade video generation model that integrates ChatGPT-4, TorToiSe-v2, StyleGAN, and D-ID studio to create personalized self-introduction videos for the metaverse. This repo contains all the code needed to run Tortoise TTS, StyleGAN, ChatGPT-4 API, and D-ID studio API.
+This project proposes REMEDI, a cascade video generation model that integrates ChatGPT-4, TorToiSe-v2, StyleGAN, and D-ID studio to create personalized self-introduction videos for the metaverse. This repo contains all the code needed to run TorToiSe-v2, StyleGAN, ChatGPT-4 API, and D-ID studio API.
 
 Click the image to watch the video!
 
