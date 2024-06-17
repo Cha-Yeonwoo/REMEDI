@@ -10,7 +10,7 @@ import torch.nn as nn
 import cv2
 import argparse
 
-from fine_toon_project import run_projection
+from project import run_projection
 
 parser = argparse.ArgumentParser(description="Toonify")
 parser.add_argument("--source", type=str, required=True, help="Input image")

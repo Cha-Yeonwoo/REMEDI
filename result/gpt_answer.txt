@@ -1,9 +1,12 @@
-Ladies and gentlemen,
+Good morning,
 
-It is with great enthusiasm that I stand before you today. As a proud graduate from KAIST School of Computing with a double major in Electronic Engineering, I have embarked on a journey that merges the intricate worlds of Generative AI and computer vision. These fields, teeming with innovation and limitless potential, have not only sparked my curiosity, but have also ignited my passion for contributing to the digital era.
+Thank you for the opportunity to speak with you today. My name is Yeonwoo Cha, and I'm a recent graduate from KAIST School of Computing with a double major in Electronic Engineering. My academic journey has been driven by a keen interest in cutting-edge technologies, particularly in the fields of Generative AI and computer vision.
 
-As we navigate an increasingly interconnected world, I am committed to leveraging my expertise to develop technology that transcends boundaries, enhances human experiences, and empowers society. The fusion of Generative AI with computer vision is not just about creating; it is about redefining our perceptions and unlocking new possibilities.
+Throughout my time at KAIST, I've dedicated myself to exploring these interests through rigorous coursework, collaborative projects, and self-directed learning. I'm excited about the potential of AI to revolutionize how we interact with the world, and I believe my background equips me with the unique blend of skills required to contribute positively to your team.
 
-Together, let us push the frontiers of technology and unfold a future where digital intelligence serves to uplift humanity in unprecedented ways. For it is our collective creativity and drive that will chart the course of tomorrow.
+What draws me to your company is your commitment to innovation and excellence in AI development. I am eager to bring my passion for technology, alongside my technical expertise, to help drive forward your projects and achieve outstanding results.
 
-Thank you.
+I look forward to discussing how my background, interests, and ambitions align with the goals of your organization. Thank you for considering my application.
+
+Best regards,
+Yeonwoo Cha

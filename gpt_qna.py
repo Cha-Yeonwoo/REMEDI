@@ -3,7 +3,12 @@ import os
 import sys
 import time
 from typing import List, Optional
+import argparse
 
+parser = argparse.ArgumentParser(description="GPT")
+parser.add_argument("--pdf", type=str, required=True, help="Your profile PDF")
+parser.add_argument("--option", type=str, default='Job interview', help="Usage of this video generation")
+args = parser.parse_args()
 
 class PDFAssistant:
     """
@@ -87,9 +92,10 @@ if __name__ == "__main__":
     client = PDFAssistant()
     #client.upload_file("/mnt/disk1/ivymm02/information/steve_jobs_info.pdf")
     client.upload_file("/mnt/disk1/ivymm02/my_profile.pdf")
+    client.upload_file(args.pdf)
 
     question_template = "Write a one-minute-long speech for {} by using the pdf that contains my information. Don't include any description of nonverbal communication. Don't use text-to-speech challenging words. Don't use e-mail format or letter format. You don't need to include every information that I gave you. The speech must be less than 200 words."
-    tone = input("Tell me the purpose of your speech (ex. online date, job interview, ...): ")
+    tone = args.option # input("Tell me the purpose of your speech (ex. online date, job interview, ...): ")
     question = question_template.format(tone)
 
     answers = client.get_answers(question)
