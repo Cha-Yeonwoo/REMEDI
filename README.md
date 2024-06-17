@@ -21,8 +21,11 @@ There are 3 generated videos by REMEDI. Click the images to watch the videos!
 
 ## How to Run REMEDI?
 ### Environment
-Two envrionment are needed for StyleGAN2 and TorToiSe for each. Each requirements are illustrated in requirements_stylegan.txt and requirements_tortoise.txt
+Two envrionment are needed for StyleGAN2 and TorToiSe for each. Each requirements are illustrated in ''requirements_stylegan.txt'' and ''requirements_tortoise.txt''.
 
+
+### Run
+Execute the bash script ''create_video.sh''.
 ```
 git clone https://github.com/Cha-Yeonwoo/Cha-Yeonwoo.github.io.git
 cd Cha-Yeonwoo.github.io
