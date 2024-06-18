@@ -25,7 +25,8 @@ Two envrionment are needed for StyleGAN2 and TorToiSe for each. Each requirement
 
 
 ### Run
-You should fill in API in ''gpt_answer.py''
+You should fill in API in ''gpt_qna.py''.
+
 Execute the bash script ''create_video.sh''.
 ```
 git clone https://github.com/Cha-Yeonwoo/Cha-Yeonwoo.github.io.git
